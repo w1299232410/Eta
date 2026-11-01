@@ -31,6 +31,7 @@ import org.json.JSONObject
 
 internal object XiaoAiHooks {
     const val SUPPORTED_VERSION_CODE = 507013032L
+    const val SUPPORTED_VERSION_CODE_OLD = 507013003L
 
     private const val OPERATION_MANAGER_CLASS =
         "com.xiaomi.voiceassistant.instruction.base.OperationManager"
@@ -39,7 +40,7 @@ internal object XiaoAiHooks {
     private const val INSTRUCTION_CLASS = "com.xiaomi.ai.api.common.Instruction"
     private const val ENGINE_CLASS = "y00.r0"
     private const val ASR_PROCESSOR_CLASS = "z10.a"
-    private const val AGENT_ACTION_MANAGER_CLASS = "kh0.s0"
+    private const val AGENT_ACTION_MANAGER_CLASS = "dh0.s0"
     private const val ASR_RESULT_FULL_NAME = "SpeechRecognizer.RecognizeResult"
     private const val IMAGE_ID_STORE_CLASS = "k00.y0"
     private const val FLOAT_MANAGER_CLASS = "com.xiaomi.voiceassistant.widget.d"
