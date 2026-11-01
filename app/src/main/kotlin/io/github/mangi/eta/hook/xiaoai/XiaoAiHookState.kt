@@ -13,6 +13,7 @@ internal object XiaoAiTakeoverPolicy {
         val prompt: String,
     )
 
+    // bumped: force a clean rebuild (cache key) + accept legacy versionCode
     fun isSupportedVersion(versionCode: Long): Boolean =
         versionCode == XiaoAiHooks.SUPPORTED_VERSION_CODE ||
             versionCode == XiaoAiHooks.SUPPORTED_VERSION_CODE_OLD
