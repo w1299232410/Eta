@@ -120,7 +120,7 @@ internal object XiaoAiHooks {
         ) { chain ->
             val context = chain.thisObject as? Context
             val versionCode = context?.let(::packageVersionCode) ?: -1L
-            if (XiaoAiTakeoverPolicy.isSupportedVersion(versionCode)) {
+            if (versionCode == SUPPORTED_VERSION_CODE || versionCode == SUPPORTED_VERSION_CODE_OLD) {
                 installBusinessHooksOnce(
                     module = module,
                     rootLogger = rootLogger,
